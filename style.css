@@ -665,7 +665,7 @@ footer {
     display: none;
   }
   .languages-section {
-    height: 150px;
+    height: 175px;
   }
 
   .section-title {
@@ -675,7 +675,10 @@ footer {
   .language-img-container {
     height: 40px;
     width: 40px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .language_name {
@@ -746,7 +749,7 @@ footer {
 
 @media (max-width: 400px) {
   .project-overview {
-    top: 3px;
+    top: 5px;
     left: 4px;
   }
   .project-description {
@@ -758,7 +761,7 @@ footer {
   }
 
   .project-title {
-    font-size: 12px;
+    font-size: 9px;
   }
 
   .project-link {
