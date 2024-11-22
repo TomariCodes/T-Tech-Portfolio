@@ -466,12 +466,17 @@ footer {
 .language-img-container {
   height: 70px;
   width: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   transition: all 0.2s ease;
 }
 
 .language_name {
   display: none;
+  transition: all 0.2s ease;
 }
 
 .language-img-container:hover {
@@ -739,25 +744,24 @@ footer {
   }
 }
 
-
 @media (max-width: 400px) {
-    .project-overview {
+  .project-overview {
     top: 3px;
     left: 4px;
   }
-.project-description {
-font-size: 10px;
-}
+  .project-description {
+    font-size: 10px;
+  }
 
   .project-language {
     font-size: 10px;
   }
 
-    .project-title {
+  .project-title {
     font-size: 12px;
   }
 
-    .project-link {
+  .project-link {
     font-size: 10px;
   }
 }
