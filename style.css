@@ -687,12 +687,13 @@ footer {
 
   .projects {
     height: 50%;
-    margin: 80px auto;
+    width: 100%;
+    margin: 40px auto;
     padding: 0;
   }
   .project-link-wrapper {
     height: 100px;
-    box-shadow: 7px 34px 17px rgba(0, 0, 0, 0.6);
+    box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.6);
   }
   .project-container {
     margin-bottom: 20px;
@@ -731,5 +732,28 @@ footer {
 
   .project-link {
     font-size: 12px;
+  }
+}
+
+
+@media (max-width: 400px) {
+    .project-overview {
+    top: 3px;
+    left: 4px;
+  }
+.project-description {
+font-size: 10px;
+}
+
+  .project-language {
+    font-size: 10px;
+  }
+
+    .project-title {
+    font-size: 12px;
+  }
+
+    .project-link {
+    font-size: 10px;
   }
 }
