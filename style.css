@@ -690,17 +690,21 @@ footer {
     width: 100%;
     margin: 40px auto;
     padding: 0;
+    justify-content: center;
+    align-items: center;
   }
   .project-link-wrapper {
     height: 100px;
     box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.6);
   }
   .project-container {
+    margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
     padding: 0;
     width: 60%;
     display: flex;
+    justify-content: center;
   }
 
   .footer_link {
