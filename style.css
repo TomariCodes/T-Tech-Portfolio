@@ -648,16 +648,16 @@ footer {
     width: 100%;
   }
   .logo {
-    font-size: 20px;
+    font-size: 1.7em;
   }
 
   li > .header-link {
-    font-size: 14px;
+    font-size: 1.1em;
   }
 
   .contact-link,
   .contact-button {
-    font-size: 12px;
+    font-size: 1.1em;
     padding: 10px;
   }
 
@@ -665,7 +665,7 @@ footer {
     display: none;
   }
   .languages-section {
-    height: 175px;
+    height: 40vh;
   }
 
   .section-title {
