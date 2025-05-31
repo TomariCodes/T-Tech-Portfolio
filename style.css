@@ -622,7 +622,7 @@ footer {
   }
 
   .aboutMe-para {
-    margin-bottom: 1px;
+    margin-bottom: 1%;
   }
 
   .city-container {
@@ -641,7 +641,7 @@ footer {
   }
 
   .aboutMe-title {
-    font-size: 20px;
+    font-size: 1.2em;
   }
 
   header {
@@ -658,7 +658,7 @@ footer {
   .contact-link,
   .contact-button {
     font-size: 1.1em;
-    padding: 10px;
+    padding: 1%;
   }
 
   .certificates {
@@ -669,12 +669,12 @@ footer {
   }
 
   .section-title {
-    font-size: 18px;
+    font-size: 1.3em;
   }
 
   .language-img-container {
-    height: 40px;
-    width: 40px;
+    height: 10vh;
+    width: 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
