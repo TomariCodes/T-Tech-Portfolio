@@ -62,13 +62,13 @@ button {
 }
 
 footer {
-  border: 1px solid black;
   width: 100%;
-  max-height: 400px;
+  height: 30vh;
+  max-height: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: space-between;
   background-color: var(--potential-color2);
   color: var(--potential-white1);
 }
@@ -114,7 +114,7 @@ footer {
 
 .logo {
   color: var(--potential-color2);
-  font-size: 28px;
+  font-size: 3em;
   font-weight: bold;
   margin-left: 5px;
 }
@@ -139,7 +139,7 @@ footer {
 .aboutMe-img {
   width: 100%;
   padding-right: 29px;
-  transform: scale(1.99);
+  transform: scale(2) translate(-1px, -8px);
 }
 
 .text--blue {
@@ -149,21 +149,23 @@ footer {
 
 .aboutMe-title {
   color: var(--potential-color2);
-  font-size: 30px;
+  font-size: 2.9em;
   font-weight: bold;
-  margin-bottom: 6px;
+  margin-bottom: 1%;
+  // margin-top: 1%;
 }
 
 .aboutMe-para {
   width: 80%;
   text-align: center;
-  font-size: 20px;
+  font-size: 2em;
   font-weight: 500;
+  margin: 2% 0;
 }
 
 .city-container {
   width: 80%;
-  height: 40%;
+  height: 60%;
   border: 1px solid black;
   overflow: hidden;
   margin: auto;
@@ -202,8 +204,8 @@ footer {
     var(--potential-color1) 100%
   );
   /*
-        .sky {
-    background: radial-gradient(
+    .sky {
+      background: radial-gradient(
         closest-corner circle at 15% 15%,
         #ccc,
         #ccc 20%,
@@ -262,17 +264,17 @@ footer {
     var(--building-color2) 6%,
     var(--window-color2) 6%,
     var(--window-color2) 9%
-  );
-}
-
-.bb3 {
-  width: 10%;
-  height: 55%;
-  background: repeating-linear-gradient(
-    90deg,
-    var(--building-color3),
-    var(--building-color3),
-    var(--window-color3) 15%
+    );
+  }
+  
+  .bb3 {
+    width: 10%;
+    height: 55%;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--building-color3),
+      var(--building-color3),
+      var(--window-color3) 15%
   );
 }
 
@@ -326,22 +328,22 @@ footer {
   width: 100%;
   height: 80%;
   background: repeating-linear-gradient(
-      90deg,
-      var(--building-color4),
-      var(--building-color4) 10%,
-      transparent 10%,
-      transparent 15%
+    90deg,
+    var(--building-color4),
+    var(--building-color4) 10%,
+    transparent 10%,
+    transparent 15%
     ),
     repeating-linear-gradient(
       var(--building-color4),
       var(--building-color4) 10%,
       var(--window-color4) 10%,
       var(--window-color4) 90%
-    );
-}
-
-.fb2 {
-  width: 10%;
+      );
+    }
+    
+    .fb2 {
+      width: 10%;
   height: 40%;
 }
 
@@ -421,10 +423,10 @@ footer {
   position: relative;
   right: 10%;
   background: repeating-linear-gradient(
-      var(--building-color2),
-      var(--building-color2) 5%,
-      transparent 5%,
-      transparent 10%
+    var(--building-color2),
+    var(--building-color2) 5%,
+    transparent 5%,
+    transparent 10%
     ),
     repeating-linear-gradient(
       90deg,
@@ -432,10 +434,10 @@ footer {
       var(--building-color2) 12%,
       var(--window-color2) 12%,
       var(--window-color2) 44%
-    );
-}
-
-.fb6 {
+      );
+    }
+    
+    .fb6 {
   width: 9%;
   height: 38%;
   background: repeating-linear-gradient(
@@ -444,55 +446,56 @@ footer {
       var(--building-color3) 10%,
       transparent 10%,
       transparent 30%
-    ),
-    repeating-linear-gradient(
-      var(--building-color3),
-      var(--building-color3) 10%,
-      var(--window-color3) 10%,
-      var(--window-color3) 30%
-    );
-}
+      ),
+      repeating-linear-gradient(
+        var(--building-color3),
+        var(--building-color3) 10%,
+        var(--window-color3) 10%,
+        var(--window-color3) 30%
+        );
+      }
+      
+      .languages-section {
+        width: 100%;
+        height: 300px;
+        background-color: var(--potential-color2);
+        color: var(--potential-white1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .language-img-container {
+        height: 70px;
+        width: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: all 0.2s ease;
+      }
+      
+      .language_name {
+        display: none;
+        transition: all 0.2s ease;
+      }
 
-.languages-section {
-  width: 100%;
-  height: 300px;
-  background-color: var(--potential-color2);
-  color: var(--potential-white1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.language-img-container {
-  height: 70px;
-  width: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transition: all 0.2s ease;
-}
-
-.language_name {
-  display: none;
-  transition: all 0.2s ease;
-}
-
-.language-img-container:hover {
-  transform: scale(0.7);
-  cursor: pointer;
-}
-
-.language-img-container:hover > .language_name {
-  display: initial;
-  font-size: 20px;
-}
-
-.section-title {
-  font-size: 24px;
+      .language-img-container:hover {
+        transform: scale(0.7);
+        cursor: pointer;
+      }
+      
+      .language-img-container:hover > .language_name {
+        display: initial;
+        font-size: 20px;
+      }
+      
+      .section-title {
+  font-size: 2.5em;
   font-weight: 600;
-  margin-top: 10px;
+  margin: 3%;
+  text-align: center;
 }
 
 .language-img-flex {
@@ -509,19 +512,26 @@ footer {
 }
 
 .project-container {
-  margin-bottom: 50px;
+  margin-bottom: 3%;
   margin-left: 15px;
   position: relative;
 }
 
 .projects {
   width: 100%;
+  height: 100vh;
+  margin-bottom: 30%;
+  z-index: 0;
+}
+
+.projects-flex {
+  width: 100%;
+  height: 100%;
   display: flex;
+  object-fit: contain;
   flex-wrap: wrap;
-  margin: 30px 0;
   justify-content: center;
   align-items: center;
-  z-index: 0;
 }
 
 .project-container:hover > .project-link-wrapper .project-img {
@@ -586,7 +596,7 @@ footer {
   width: 95vw;
   display: flex;
   justify-content: space-around;
-  margin: auto;
+  align-items: center;
 }
 
 .footer_list > li,
@@ -600,7 +610,7 @@ footer {
 .footer {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 10vw;
+  margin-bottom: 1%;
 }
 
 .top_link {
