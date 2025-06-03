@@ -152,7 +152,7 @@ footer {
   font-size: 2.9em;
   font-weight: bold;
   margin-bottom: 1%;
-  // margin-top: 1%;
+  margin-top: 1%;
 }
 
 .aboutMe-para {
@@ -609,8 +609,7 @@ footer {
 
 .footer {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 1%;
+  margin-top: 8%;
 }
 
 .top_link {
@@ -623,6 +622,10 @@ footer {
   padding-bottom: 40px;
   margin-top: 40px;
   color: var(--potential-white2);
+}
+
+@media (max-width: 840px) {
+
 }
 
 @media (max-width: 600px) {
@@ -667,8 +670,7 @@ footer {
 
   .contact-link,
   .contact-button {
-    font-size: 1.1em;
-    padding: 1%;
+    display: none;
   }
 
   .certificates {
@@ -703,15 +705,10 @@ footer {
     text-align: center;
   }
 
-  .project-img-wrapper {
-    width: 100%;
-    margin: auto;
-  }
-
   .projects {
     height: 50%;
     width: 100%;
-    margin: 40px auto;
+    margin: 15% auto;
     padding: 0;
     justify-content: center;
     align-items: center;
@@ -722,8 +719,8 @@ footer {
   }
   .project-container {
     margin: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10%;
+    margin-top: 5%;
     padding: 0;
     width: 60%;
     display: flex;
@@ -744,15 +741,16 @@ footer {
   }
 
   .project-title {
-    font-size: 16px;
+    font-size: 1em;
+    margin-top: 5%;
   }
 
   .project-language {
-    font-size: 14px;
+    font-size: 0.9em;
   }
 
   .project-description {
-    font-size: 12px;
+    font-size: 0.8em;
     margin-top: 5px;
     margin-bottom: 2px;
   }
@@ -763,6 +761,78 @@ footer {
 }
 
 @media (max-width: 400px) {
+
+  .contact-button {
+    padding: 8% 5%;
+    border-radius: 20%;
+    font-size: 1em;
+    margin: 2%;
+  }
+  .contact-link {
+    height: 20%;
+    width: 15%;
+    
+  }
+  
+  .contact-info {
+    height: 100%;
+    width: 349px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .logo {
+    color: var(--potential-color2);
+    font-size: 3em;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .aboutMe-info {
+    width: 100%;
+    height: 100vh;
+    
+  }
+  
+  .aboutMe-img-wrapper {
+    margin-bottom: 40px;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 50%;
+  }
+  .aboutMe-img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    transform: scale(2) translate(-15px, -4px);
+  }
+
+  
+  .aboutMe-para {
+    font-size: 1em;
+    margin-top: 10%;
+  }
+
+  .logo {
+    font-size: 1em;
+  }
+  .languages-section {
+    margin-top: 5%;
+    height: 20vh;
+  }
+
+  footer {
+    height: 30vh;
+  }
+  .city-container {
+    margin-top: 19%;
+    width: 60%;
+    height: 40%;
+  }
+  
   .project-overview {
     top: 5px;
     left: 4px;
@@ -770,7 +840,7 @@ footer {
   .project-description {
     font-size: 10px;
   }
-
+  
   .project-language {
     font-size: 10px;
   }
@@ -782,4 +852,6 @@ footer {
   .project-link {
     font-size: 10px;
   }
-}
+
+
+  }
