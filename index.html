@@ -21,7 +21,7 @@
       <!-- ABOUT ME SECTION -->
       <section class="aboutMe-section" id="aboutMe-section">
         <div class="aboutMe-profileImage-container">
-          <img class="aboutMe-profileImage" src="Assets/aboutMe.jpeg" alt="A profile picture of Tomari Southern">
+          <img class="aboutMe-profileImage" src="Assets/aboutMe.jpeg" alt="A profile picture of Tomari Southern" height="250">
         </div>
         <h2>Hello, I'm <span class="secondary">Tomari</span></h2>
         <p>
@@ -58,40 +58,42 @@
         <h2>My Projects</h2>
 
         <div class="projects-list-container">
-          <a class="project-link" href="">
+          <a class="project-link" target="_blank" href="https://skyline-weather.com">
             <div class="project-item">
-              <!-- PROJECT 1 IMAGE -->
+              <img class="project-image" src="Assets/skyline-weather.png" alt="Project 1 screenshot">
               <h3>Project 1</h3>
               <p>A web application that helps users track their tasks efficiently.</p>
             </div>
           </a>
           
-          <a class="project-link" href="">
+          <a class="project-link" href="https://prosperon-finance.com" target="_blank">
             <div class="project-item">
-              <!-- PROJECT 2 IMAGE -->
+              <img class="project-image" src="Assets/prosperon-finance.png" alt="Project 2 screenshot">
               <h3>Project 2</h3>
               <p>An e-commerce website built with modern web technologies.</p>
             </div>
           </a>
 
-          <a class="project-link" href="">
-            <div class="project-item">
-              <!-- PROJECT 2 IMAGE -->
-              <h3>Project 2</h3>
-              <p>An e-commerce website built with modern web technologies.</p>
-            </div>
-          </a>
         </section>
         </main>
         <footer class="footer">
           <nav aria-label="footer-navigation">
             <ul class="footer-list">
-              <li><a class="footer-link" href="mailto:your-email@example.com">Email</a></li>
+              <li><a class="footer-link" id="email-link">Email</a></li>
               <li><a class="footer-link" href="https://www.linkedin.com/in/tomari-southern-014829305/">LinkedIn</a></li>
               <li><a class="footer-link" href="https://www.facebook.com/profile.php?id=61552640773519">FaceBook</a></li>
               <li><a class="footer-link" href="https://github.com/TomariCodes">Github</a></li>
             </ul>
           </nav>
         </footer>
+
+        <div class="modal" id="modal">
+          <div class="modal-content" id="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Contact Me</h2>
+            <div id="form-container"></div>
+          </div>
+        </div>
+        <script src="main.js"></script>
   </body>
 </html>
