@@ -310,6 +310,11 @@ select {
   border-radius: 8px;
 }
 
+.modal-content h2 {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
 .close-button {
   color: var(--text-muted);
   float: right;
@@ -334,10 +339,35 @@ select {
 .form-group input,
 .form-group textarea {
   width: 100%;
+  min-width: 0;
   padding: 10px;
   border: 1px solid var(--border);
   border-radius: 4px;
   font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--secondary);
+  outline: none;
+}
+
+.form-button {
+  background-color: var(--primary);
+  color: var(--bg-light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-button:hover {
+  background-color: var(--secondary);
+  color: var(--text);
 }
 
 /* MEDIA QUERIES */
